@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    outline: none;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1219px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+header {
+    background-color: #007765;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 992px) {
+                display: none;
+            }
+
+            .menu-item {
+                padding: 0px 8px;
+                color: #fff;
+                font-weight: 500px;
+                font-size: 24px;
+            }
+
+            .menu-item:not(:last-child) {
+                border-right: 2px solid #fff;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+
+        @media (max-width: 992px) {
+            display: block;
+            hamburger-inner: #fff;
+        }
+    }
+}
+
+.lending {
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;     
+    padding-bottom: 150px;
+    padding-top: 150px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .lending-header {
+            color: #fff;
+            font-size: 72px;
+            font-weight: 500;
+
+            @media (max-width: 576px){
+                font-size: 62px;
+              }
+        }
+    }
+}
+
+.paragraph {
+
+
+
+    .paragraph-caption {
+        font-weight: 500;
+        font-size: 64px;
+        color: #007765;
+        text-align: center;
+        margin: 48px 0px;
+
+        @media (max-width: 576px){
+            font-size: 54px;
+          }
+
+          @media (max-width: 390px) {
+            font-size: 44px;
+        }
+    }
+
+    .logo-img {
+        float: left;
+        padding-right: 48px;
+        padding-bottom: 35px;
+    }
+
+    .paragraph-text {
+        font-weight: 400;
+        font-size: 32px;
+        color: #000000;
+        margin-bottom: 40px;
+
+        @media (max-width: 576px){
+            font-size: 27px;
+          }
+    }
+}
+
+.section-image {
+    margin-top: 92px;
+    background-image: url("/img/space.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 100px 0px;
+
+    .image-text {
+        color: #fff;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 48px;
+        text-align: center;
+
+        @media (max-width: 576px){
+            font-size: 38px;
+          }
+    }
+}
+
+.team {
+    background-color: #EEEEEE;
+    padding-bottom: 122px;
+    padding-top: 50px;
+    margin-top: 92px;
+
+    .caption {
+        font-weight: 500;
+        font-size: 64px;
+        color: #007765;
+        text-align: center;
+        margin: 48px 0px;
+
+        @media (max-width: 576px){
+            font-size: 54px;
+          }
+    }
+
+    .team-members {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 58px;
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 48px;
+        }
+
+        @media (max-width: 576px){
+              grid-template-columns: repeat(1, 1fr);
+            }
+
+        .member {
+
+            text-align: center;
+
+            .member-img {
+                margin-bottom: 12px;
+            }
+
+            .team-name {
+                color: #007765;
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+
+            job-title {
+                font-size: 18px;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+footer {
+    background: #333333;
+    display: flex;
+    justify-content: center;
+
+    .footer-text {
+        color: #fff;
+        text-align: center;
+        padding: 55px 0px;
+        max-width: 487px;
+    }
+}
